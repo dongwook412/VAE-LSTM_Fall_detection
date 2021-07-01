@@ -5,7 +5,7 @@
 - 'Anomaly detection for time series using vae-lstm hybrid model'에서 제안하는 VAE-LSTM 모델 사용
 
 - 11페이지 사진
-<p align="center"><img src="./VAE-LSTM_Fall_detection/img/result.PNG"></p>
+<p align="center"><img src="./VAE-LSTM_Fall_detection/img/result.png"></p>
 <br/>
 
 ## Workflow
