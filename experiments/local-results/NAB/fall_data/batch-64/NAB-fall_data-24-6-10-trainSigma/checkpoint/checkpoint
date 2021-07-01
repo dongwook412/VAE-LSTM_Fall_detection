@@ -1,0 +1,2 @@
+model_checkpoint_path: "/content/drive/MyDrive/Colab Notebooks/Timeseries/Team_project/VAE-LSTM-for-anomaly-detection/experiments/local-results/NAB/fall_data/batch-64/NAB-fall_data-24-6-10-trainSigma/checkpoint/-87520"
+all_model_checkpoint_paths: "/content/drive/MyDrive/Colab Notebooks/Timeseries/Team_project/VAE-LSTM-for-anomaly-detection/experiments/local-results/NAB/fall_data/batch-64/NAB-fall_data-24-6-10-trainSigma/checkpoint/-87520"
