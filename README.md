@@ -41,7 +41,7 @@ tensorflow_probability == 0.7.0
 5페이지
 
 ### 코드 파일 설명
-```
+
 __Data_preprocessing.py__ : train, val, test 폴더에 있는 STD, FOL csv파일에서 gyro_z와 label만 가져와서 10개의 평균값으로 데이터 전처리  fall_gyro_z.csv, fall_label.csv, test_fall_gyro_z.csv, test_fall_label.csv 파일 생성
 
 NAB-dataset-preprocessing.ipynb : 위에서 생성한 csv 파일들을 불러와서 데이터 표준화 실시. 이후 중요 정보들(val 및 test 데이터의 anomaly 위치, train과 val, test 시간 및 gyro_z 값 등)을 npz 파일로 저장  fall_data.npz, test_fall_data.npz 파일 생성
@@ -61,7 +61,7 @@ utils.py : config를 불러오거나 저장 경로에 대해 도움을 주는 �
 NAB-anomaly-detection.ipynb : 학습이 완료된 VAE, LSTM 파일을 불러 anomaly detection 진행. 검증 데이터로 최적 Threshold 설정 및 테스트 데이터로 평가 진행
 
 ml-anomaly-detection.ipynb : 3가지 훈련 및 테스트 데이터를 이용하여 Isolation Forest 및 OCSVM 학습 및 평가
-```
+
 
 ## 참조
 ```
