@@ -42,25 +42,25 @@ tensorflow_probability == 0.7.0
 
 ### 코드 파일 설명
 
-__Data_preprocessing.py__ : train, val, test 폴더에 있는 STD, FOL csv파일에서 gyro_z와 label만 가져와서 10개의 평균값으로 데이터 전처리  fall_gyro_z.csv, fall_label.csv, test_fall_gyro_z.csv, test_fall_label.csv 파일 생성
+- __Data_preprocessing.py__ : train, val, test 폴더에 있는 STD, FOL csv파일에서 gyro_z와 label만 가져와서 10개의 평균값으로 데이터 전처리  fall_gyro_z.csv, fall_label.csv, test_fall_gyro_z.csv, test_fall_label.csv 파일 생성
 
-NAB-dataset-preprocessing.ipynb : 위에서 생성한 csv 파일들을 불러와서 데이터 표준화 실시. 이후 중요 정보들(val 및 test 데이터의 anomaly 위치, train과 val, test 시간 및 gyro_z 값 등)을 npz 파일로 저장  fall_data.npz, test_fall_data.npz 파일 생성
+- __NAB-dataset-preprocessing.ipynb__ : 위에서 생성한 csv 파일들을 불러와서 데이터 표준화 실시. 이후 중요 정보들(val 및 test 데이터의 anomaly 위치, train과 val, test 시간 및 gyro_z 값 등)을 npz 파일로 저장  fall_data.npz, test_fall_data.npz 파일 생성
 
-data_loader.py : npz 파일을 이용하여 VAE 입력 데이터와 LSTM 입력 데이터 생성  rolling_windows.npy, lstm_seq.npy 파일 생성
+- __data_loader.py__ : npz 파일을 이용하여 VAE 입력 데이터와 LSTM 입력 데이터 생성  rolling_windows.npy, lstm_seq.npy 파일 생성
 
-base.py : model.py에서 VAE model의 부모 클래스인 BaseModel 클래스에서는 VAE의 loss와 optimizer 설정 및 gradient 적용을 실시. BaseTrain 클래스는 trainers.py에서 vaeTrainer 클래스의 부모 클래스로 vaeTrainer의 train_epoch 함수를 호출해서 각 epoch마다 훈련을 진행
+- __base.py__ : model.py에서 VAE model의 부모 클래스인 BaseModel 클래스에서는 VAE의 loss와 optimizer 설정 및 gradient 적용을 실시. BaseTrain 클래스는 trainers.py에서 vaeTrainer 클래스의 부모 클래스로 vaeTrainer의 train_epoch 함수를 호출해서 각 epoch마다 훈련을 진행
 
-model.py : VAE model 클래스는 encoder, 잠재 변수 생성, decoder 과정으로 된 VAE에 대한 모델 구조를 생성. LSTM 클래스는 LSTM 모델 구조를 생성하고 VAE의 encoder를 통해 임베딩된 결과를 가져오며 훈련 방법까지 존재
+- __model.py__ : VAE model 클래스는 encoder, 잠재 변수 생성, decoder 과정으로 된 VAE에 대한 모델 구조를 생성. LSTM 클래스는 LSTM 모델 구조를 생성하고 VAE의 encoder를 통해 임베딩된 결과를 가져오며 훈련 방법까지 존재
 
-trainers.py : VAE에 대한 각 epoch 훈련 과정이 명시되어 있으며 val, test 과정에서의 loss를 얻어 출력. 
+- __trainers.py__ : VAE에 대한 각 epoch 훈련 과정이 명시되어 있으며 val, test 과정에서의 loss를 얻어 출력. 
 
-train.py : base, model, trainers 파일을 이용하여 실질적인 VAE, LSTM 모델 학습 진행. 학습이 완료된 모델들은 개별적으로 저장
+- __train.py__ : base, model, trainers 파일을 이용하여 실질적인 VAE, LSTM 모델 학습 진행. 학습이 완료된 모델들은 개별적으로 저장
 
-utils.py : config를 불러오거나 저장 경로에 대해 도움을 주는 여러 메소드로 구성
+- __utils.py__ : config를 불러오거나 저장 경로에 대해 도움을 주는 여러 메소드로 구성
 
-NAB-anomaly-detection.ipynb : 학습이 완료된 VAE, LSTM 파일을 불러 anomaly detection 진행. 검증 데이터로 최적 Threshold 설정 및 테스트 데이터로 평가 진행
+- __NAB-anomaly-detection.ipynb__ : 학습이 완료된 VAE, LSTM 파일을 불러 anomaly detection 진행. 검증 데이터로 최적 Threshold 설정 및 테스트 데이터로 평가 진행
 
-ml-anomaly-detection.ipynb : 3가지 훈련 및 테스트 데이터를 이용하여 Isolation Forest 및 OCSVM 학습 및 평가
+- __ml-anomaly-detection.ipynb__ : 3가지 훈련 및 테스트 데이터를 이용하여 Isolation Forest 및 OCSVM 학습 및 평가
 
 
 ## 참조
