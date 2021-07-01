@@ -8,9 +8,7 @@
 <br/>
 
 ## Workflow
-- 9페이지 사진
-<p align="center"><img src="./Tracker/img/Workflow.PNG"></p>
-
+<p align="center"><img src="./img/framework.PNG"></p>
 <br/>
 
 
@@ -32,12 +30,14 @@ tensorflow_probability == 0.7.0
 ```
 
 ### 사용 데이터
-- 6페이지 사진
+<p align="center"><img src="./img/data.PNG"></p>
+<br/>
 
 <br/>
 
 ### VAE-LSTM Framework
-5페이지
+<p align="center"><img src="./img/vae_lstm.PNG"></p>
+<br/>
 
 ### 코드 파일 설명
 
@@ -64,15 +64,9 @@ tensorflow_probability == 0.7.0
 
 ## 참조
 ```
-Zhang, T., Ye, S., Zhang, K., Tang, J., Wen, W., Fardad, M., & Wang, Y. (2018). A systematic dnn weight pruning framework using alternating direction method of multipliers. In Proceedings of the European Conference on Computer Vision (ECCV) (pp. 184-199).
-
-Bochkovskiy, A., Wang, C. Y., & Liao, H. Y. M. (2020). YOLOv4: Optimal Speed and Accuracy of Object Detection. arXiv preprint arXiv:2004.10934.
-
-Wojke, N., Bewley, A., & Paulus, D. (2017, September). Simple online and realtime tracking with a deep association metric. In 2017 IEEE international conference on image processing (ICIP) (pp. 3645-3649). IEEE.
+Lin, S., Clark, R., Birke, R., Schönborn, S., Trigoni, N., & Roberts, S. (2020, May). Anomaly Detection for Time Series Using VAE-LSTM Hybrid Model. In ICASSP 2020-2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) (pp. 4322-4326). IEEE.
 ```
-* [admm-pruning](https://github.com/KaiqiZhang/admm-pruning)
-* [yolov4-deepsort](https://github.com/theAIGuysCode/yolov4-deepsort)
-* [tensorflow-yolov4-tflite](https://github.com/hunglc007/tensorflow-yolov4-tflite)
+* [vae-lstm](https://github.com/lin-shuyu/VAE-LSTM-for-anomaly-detection)
 
 <br/>
 
