@@ -4,7 +4,7 @@
 - 프로젝트 취지가 서로 정보를 교류하는 것이 목적이므로 데이터 및 모델 설명에 도움을 주고 결과 시각화를 위해 단일 시계열로 이상치 탐지
 - 'Anomaly detection for time series using vae-lstm hybrid model'에서 제안하는 VAE-LSTM 모델 사용
 
-<p align="center"><img src="./img/result.png"></p>
+<p align="center"><img src="./img/result.PNG"></p>
 <br/>
 
 ## Workflow
